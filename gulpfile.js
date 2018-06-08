@@ -13,6 +13,7 @@ var gulp = require("gulp"),
   pngquant = require("imagemin-pngquant"),
   rimraf = require("rimraf"),
   sourcemaps = require("gulp-sourcemaps"),
+  htmlImport = require("gulp-html-import"),
   reload = browserSync.reload;
 
 var path = {
@@ -61,13 +62,20 @@ gulp.task("html:build", function() {
     .pipe(reload({ stream: true }));
 });
 
+gulp.task("import", function() {
+  gulp
+    .src("./src/index.html")
+    .pipe(gulpImport("./src/html/"))
+    .pipe(gulp.dest("dist"));
+});
+
 //собрать js
 gulp.task("js:build", function() {
   gulp
     .src(path.src.js)
     .pipe(concat("main.min.js"))
     .pipe(gulp.dest(path.build.js))
-    .pipe(reload({stream: true}));
+    .pipe(reload({ stream: true }));
 });
 
 //собрать стили
