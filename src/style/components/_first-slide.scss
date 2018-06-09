@@ -69,6 +69,7 @@
   }
   .first-slide__text {
     text-align: center;
+    font-size: rem(25);
   }
   .first-slide__info {
     padding: 0;
@@ -87,9 +88,6 @@
   .first-slide__start-now {
     margin-bottom: rem(45);
   }
-  .first-slide__img {
-    display: none;
-  }
   .first-slide__logo {
     margin-bottom: rem(15);
   }
@@ -97,7 +95,7 @@
     margin-bottom: rem(20);
   }
   .first-slide__text {
-    font-size: rem(20);
+    font-size: rem(22);
   }
   .first-slide__button-container {
     display: none;
