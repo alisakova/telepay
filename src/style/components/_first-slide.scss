@@ -1,7 +1,7 @@
 .first-slide {
   background: $gradient-bg;
   color: #fff;
-  padding-bottom: rem(165);
+  padding-bottom: rem(17);
 }
 
 .first-slide__content {
@@ -26,6 +26,7 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  margin-bottom: rem(92);
 }
 
 .first-slide__info {
