@@ -1,0 +1,16 @@
+.btn {
+  border-radius: rem(50);
+  padding: rem(6 40);
+  border: none;
+  font-size: rem(25);
+}
+
+.btn_green {
+  background: $green-btn-color;
+}
+
+.btn_yellow {
+  background: $yellow-btn-color;
+  box-shadow: rem(0 4 5) rgba(0, 0, 0, 0.25);
+  padding: rem(20 106);
+}

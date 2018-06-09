@@ -1,0 +1,16 @@
+.feature {
+  background: url('../img/feature-bg.png') no-repeat;
+  background-size: cover;
+  padding: rem(110 0);
+}
+
+.feature__title {
+  margin-bottom: rem(106);
+}
+
+.feature__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

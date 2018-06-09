@@ -27,7 +27,7 @@ var path = {
   },
   src: {
     //Пути откуда брать исходники
-    html: "src/index.html",
+    html: "src/*.html",
     js: "src/js/*.js",
     style: "src/style/main.scss",
     img: "src/img/*.*"
@@ -53,20 +53,29 @@ var config = {
   fallback: "build/index.html"
 };
 
+function log(error) {
+  console.log(
+    [
+      "",
+      "----------ERROR MESSAGE START----------",
+      "[" + error.name + " in " + error.plugin + "]",
+      error.message,
+      "----------ERROR MESSAGE END----------",
+      ""
+    ].join("\n")
+  );
+  this.end();
+}
+
 //собрать html
 gulp.task("html:build", function() {
   gulp
     .src(path.src.html)
+    .pipe(htmlImport("src/html/"))
     .pipe(rigger())
+    .on("error", log)
     .pipe(gulp.dest(path.build.html))
     .pipe(reload({ stream: true }));
-});
-
-gulp.task("import", function() {
-  gulp
-    .src("./src/index.html")
-    .pipe(gulpImport("./src/html/"))
-    .pipe(gulp.dest("dist"));
 });
 
 //собрать js
@@ -83,7 +92,7 @@ gulp.task("style:build", function() {
   gulp
     .src(path.src.style)
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass().on("error", sass.logError))
     .pipe(prefixer())
     .pipe(cssmin())
     .pipe(sourcemaps.write())

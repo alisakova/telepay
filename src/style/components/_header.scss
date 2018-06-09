@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(34 0);
+  margin-bottom: rem(82);
+  .btn {
+    margin-right: rem(44);
+    font-size: rem(20);
+  }
+}
+
+.header__link {
+  height: 35px;
+}

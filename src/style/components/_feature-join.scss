@@ -1,0 +1,13 @@
+.feature-join {
+  background: $gradient-bg;
+  padding: rem(110 0);
+  text-align: center;
+}
+
+.feature-join__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: rem(122);
+}

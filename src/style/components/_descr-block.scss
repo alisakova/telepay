@@ -1,0 +1,23 @@
+.descr-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(80 0 126);
+  position: relative;
+  width: 100%;
+}
+
+.descr-block__text {
+  max-width: rem(660);
+  position: relative;
+  z-index: 2;
+  padding-top: rem(55);
+  padding-left: 2.5rem;
+}
+
+.descr-block__img {
+  max-width: rem(675);
+  position: absolute;
+  top: rem(80);
+  right: rem(-105);
+}
