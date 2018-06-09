@@ -18,21 +18,10 @@ $footer-bg: #F8F9F9;
 .footer__link {
   display: block;
   position: relative;
-  &:after {
-    content: '';
-    position: absolute;
-    background: #000;
-    width: 100%;
-    height: rem(1);
-    bottom: rem(-2);
-    left: 0;
-    opacity: 0;
-    transition: opacity 250ms;
-  }
+  border-bottom: 1px solid #fff;
+  transition: border-bottom-color 250ms;
   &:hover {
-    &:after {
-      opacity: 1;
-    }
+    border-bottom-color: transparent;
   }
 }
 
