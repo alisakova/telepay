@@ -47,3 +47,9 @@ $footer-bg: #F8F9F9;
     display: block;
   }
 }
+
+@media (max-width: 540px) {
+  .footer__links {
+    padding: 0;
+  }
+}

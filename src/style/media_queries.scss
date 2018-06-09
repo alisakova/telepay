@@ -21,3 +21,21 @@
     max-width: none;
   }
 }
+
+@media (max-width: 960px) {
+	p {
+		font-size: rem(20);
+	}
+	h2 {
+		font-size: rem(35);
+	}
+	h1 {
+		font-size: rem(35);
+	}
+}
+
+@media (max-width: 540px) {
+	h2 {
+		font-size: rem(30);
+	}
+}

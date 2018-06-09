@@ -39,3 +39,33 @@
   max-width: rem(665);
   margin-right: rem(35);
 }
+
+@media (max-width: 960px) {
+  .start__img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .start {
+    padding: rem(80 0);
+  }
+  .start__content {
+    flex-direction: column;
+  }
+  .start__img {
+    margin: 0 0 2rem;
+    width: 100%;
+  }
+  .start__text {
+    font-size: rem(32);
+    span {
+      &.bigger {
+        font-size: rem(100);
+      }
+      &.smaller {
+        font-size: 4.2rem;
+      }
+    }
+  }
+}

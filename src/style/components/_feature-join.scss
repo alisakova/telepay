@@ -14,3 +14,12 @@
   flex-wrap: wrap;
   margin-bottom: rem(122);
 }
+
+@media (max-width: 768px) {
+  .feature-join {
+    padding: rem(80 0);
+  }
+  .feature-join__list {
+    margin-bottom: rem(60);
+  }
+}

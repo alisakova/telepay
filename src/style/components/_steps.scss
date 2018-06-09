@@ -51,3 +51,35 @@
 .steps__img {
   max-width: rem(572);
 }
+
+@media (max-width: 768px) {
+  .steps {
+    padding: rem(80 0);
+    p {
+      font-size: rem(22);
+    }
+  }
+  .steps__title {
+    margin-bottom: rem(60);
+  }
+  .steps__item {
+    flex-direction: column-reverse;
+    margin-bottom: rem(50);
+    &_reverse {
+      .steps__descr {
+        padding: 0;
+      }
+    }
+  }
+  .steps__descr {
+    width: 100%;
+    padding: 0;
+    p {
+      text-align: center;
+    }
+  }
+  .steps__img {
+    width: 100%;
+    margin-bottom: rem(25);
+  }
+}

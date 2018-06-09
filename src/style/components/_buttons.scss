@@ -24,3 +24,9 @@
     background: $green-btn-color;
   }
 }
+
+@media (max-width: 540px) {
+  .btn {
+    font-size: 1rem;
+  }
+}

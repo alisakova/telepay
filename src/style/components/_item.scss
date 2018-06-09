@@ -37,3 +37,16 @@ $item-icon-bg: #F2F2F2;
   text-align: center;
   white-space: pre-line;
 }
+
+@media (max-width: 768px) {
+  .item {
+    max-width: none;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  .item__descr {
+    font-size: rem(20);
+  }
+}

@@ -19,3 +19,12 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+@media (max-width: 960px) {
+  .feature {
+    padding: rem(80 0);
+  }
+  .feature__title {
+    margin-bottom: rem(50);
+  }
+}

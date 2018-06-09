@@ -22,3 +22,10 @@
     border-bottom-color: #fff;
   }
 }
+
+@media (max-width: 540px) {
+  .header {
+    margin-bottom: rem(30);
+    padding: rem(18 0);
+  }
+}
