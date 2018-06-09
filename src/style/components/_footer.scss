@@ -18,10 +18,10 @@ $footer-bg: #F8F9F9;
 .footer__link {
   display: block;
   position: relative;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid transparent;
   transition: border-bottom-color 250ms;
   &:hover {
-    border-bottom-color: transparent;
+    border-bottom-color: #000;
   }
 }
 
