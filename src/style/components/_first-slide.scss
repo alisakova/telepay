@@ -15,6 +15,9 @@
   margin-bottom: rem(40);
   display: block;
   max-width: rem(426);
+  svg {
+    max-width: 100%;
+  }
 }
 
 .first-slide__title {
