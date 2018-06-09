@@ -14,4 +14,21 @@
 
 .header__link {
   height: rem(35);
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: rem(1);
+    bottom: rem(-2);
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
 }
