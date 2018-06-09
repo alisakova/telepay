@@ -1,0 +1,41 @@
+.start {
+  background: url('../img/start-bg.png') no-repeat;
+  background-size: cover;
+  padding: rem(116 0 130);
+}
+
+.start__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: rem(422);
+  text-align: center;
+}
+
+.start__text {
+  margin-bottom: rem(30);
+  font-size: rem(42);
+  line-height: 1.25;
+  padding-top: rem(10);
+  span {
+    display: block;
+    &.bigger {
+      font-size: rem(125);
+    }
+    &.smaller {
+      font-size: rem(105);
+    }
+  }
+}
+
+.start__img {
+  max-width: rem(610);
+  margin-right: rem(70);
+}

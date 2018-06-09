@@ -16,6 +16,7 @@ html {
 body {
 	display: block;
 	min-height: 100%;
+	min-width: rem(1160);
 	margin: 0;
 	font: inherit;
 	font-size: 100%;
@@ -107,3 +108,4 @@ img {
 @import "components/item";
 @import "components/feature-join";
 @import "components/start";
+@import "components/footer";

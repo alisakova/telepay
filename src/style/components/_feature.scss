@@ -2,6 +2,11 @@
   background: url('../img/feature-bg.png') no-repeat;
   background-size: cover;
   padding: rem(110 0);
+  .item__icon {
+    img {
+      max-width: rem(72);
+    }
+  }
 }
 
 .feature__title {
